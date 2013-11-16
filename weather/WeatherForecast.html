@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>City Weather Forecast</title>
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/weather v2.js"></script>
+    <link rel="stylesheet" href="css/weather.css" />
+    <link rel="stylesheet" href="css/hot-sneaks/jquery-ui-1.10.3.custom.min.css" />
+    
+</head>
+<body>
+    <div class="weather">Romeo,MI</div>
+    <div class="weather">Windsor,Ontario</div>
+    <div class="weather">Dallas,Texas</div>
+
+    <script type="text/javascript">
+        
+       $(document).ready(function () {
+           $(".weather").weatherFeed({relativeTimeZone:true});
+        });
+    </script>
+</body>
+</html>
