@@ -97,12 +97,14 @@
 
                                             var today = new Date(currentTime);
                                             var dstOffset = 0;
+                                            var hourMod = "";
+                                            var minMod = "";
+                                            var background = "";
 
                                             if (today.dst())
                                                 dstOffset = 1;
 
-                                            var hourMod = "";
-                                            var minMod = "";
+
 
                                             if (today.getHours() + dstOffset < 10)
                                                 hourMod = "0";
@@ -110,7 +112,7 @@
                                                 minMod = "0";
 
 
-                                            var background = "";
+                                            
 
                                             var code = parseInt(data.query.results.channel.item.forecast[0].code);
                                             if (code < 18 || code > 37 || code == 35)

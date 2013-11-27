@@ -1,6 +1,5 @@
 ﻿ .fullDay
 {
-    display:inline;
     /*border-radius: 15px;*/
     border: 1px solid #000;
     background-color:#1F5C99;
@@ -19,7 +18,6 @@
 }
 .today
 {
-     display:inline;
     margin: 0 5px 0 60px;
     padding: 10px 10px 10px 10px;
     color: #FFF;
@@ -76,4 +74,9 @@ ul
 .fullday p
 {
     margin: 0;
+}
+
+ul li
+{
+    display:inline-block;
 }
