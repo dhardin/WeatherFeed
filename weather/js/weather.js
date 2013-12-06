@@ -15,7 +15,8 @@
 (function ($, document, window) {
     var defaults = {
         retryLimit: 10,
-        relativeTimeZone: true
+        relativeTimeZone: true,
+        width: 960,
     };
 
     $.fn.weatherFeed = function (options) {
@@ -23,6 +24,7 @@
         var tryCount = 0;
         this.each(function () {
             var $weatherTag = $(this);
+            $weatherTag.css("width", options.width);
             var city = $.trim($(this).text().split(',')[0]);
             var state = $.trim($(this).text().split(',')[1]);
             var days = 5;
