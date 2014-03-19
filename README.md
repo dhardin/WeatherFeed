@@ -1,4 +1,4 @@
-jTable
+WeatherFeed
 ======
 
-Adds edit, sort, and hightligh capabilities to a HTML table.
+Plugin to allow developers to easily add one or more weather forcast feeds to a site.
